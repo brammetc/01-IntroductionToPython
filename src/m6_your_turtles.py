@@ -29,6 +29,23 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 #
 ########################################################################
 import rosegraphics as rg
+
 window = rg.TurtleWindow()
+
 red_turtle = rg.SimpleTurtle('arrow')
-red_turtle.pen = rg.Pen('blue',10)
+red_turtle.pen = rg.Pen('blue',5)
+red_turtle.speed = 15
+size = 10
+for k in range(15):
+
+    red_turtle.draw_circle(size)
+    red_turtle.pen_up()
+    red_turtle.right(90)
+    red_turtle.forward(10)
+    red_turtle.left(90)
+
+    red_turtle.pen_down()
+    size = size + 10
+
+
+window.close_on_mouse_click()
