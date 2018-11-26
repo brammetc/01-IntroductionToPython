@@ -116,7 +116,7 @@ natasha.go_to(rg.Point(-100, 200))
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Add a few more lines of your own code to make one of the existing
 #   SimpleTurtles move some more and/or have different characteristics.
 #
@@ -126,13 +126,8 @@ natasha.go_to(rg.Point(-100, 200))
 #   As always, test by running the module.
 #
 ###############################################################################
-brad = rg.SimpleTurtle('arrow')
-brad.pen = rg.Pen('blue', 10)
-brad.speed = 5
-
-brad.forward(60)
-brad.right(30)
-brad.forward(100)
+natasha.left(90)
+natasha.forward(200)
 ###############################################################################
 #
 # TODO: 5.
@@ -159,7 +154,13 @@ brad.forward(100)
 #   As always, test by running the module.
 #
 ###############################################################################
+brad = rg.SimpleTurtle('arrow')
+brad.pen = rg.Pen('blue', 10)
+brad.speed = 5
 
+brad.forward(60)
+brad.right(30)
+brad.forward(100)
 ###############################################################################
 #
 # TODO: 6.
